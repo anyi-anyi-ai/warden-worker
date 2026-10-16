@@ -2,7 +2,7 @@ name = "warden-worker"
 main = "src/entry.js"
 compatibility_date = "2025-09-19"
 keep_vars = true
-workers_dev = false
+workers_dev = true
 preview_urls = false
 
 [durable_objects]
@@ -127,6 +127,7 @@ migrations_dir = "migrations"
 # If R2 is not configured, KV will be used for attachments.
 [[kv_namespaces]]
 binding = "ATTACHMENTS_KV"
+id = "48bf4bdb8a204b06ab9bb8f50c051817"
 
 [env.dev]
 name = "warden-worker-dev"
